@@ -1,7 +1,6 @@
 
 import mewPokemon from "../assets/mew.webp";
 import { Image } from "react-bootstrap";
-import SelectPokemons from "./SelectPokemons";
 
 const Home = () => {
   return (
