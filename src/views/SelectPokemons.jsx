@@ -12,7 +12,7 @@ const SelectPokemons = () => {
   useEffect(() => {
     const getPokemons = async () => {
       try {
-        const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=100");
+        const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=20");
         setPokemons(response.data.results);
         console.log(response.data.results);
       } catch (error) {
@@ -34,8 +34,8 @@ const SelectPokemons = () => {
 
   return (
     <div className="pokemons">
-      <h2>Selecciona a un Pokemon</h2>
-      <section className="poke_section">
+      <h2 className="mt-4">Buscar Pokemon</h2>
+      <section className="select-pokemon">
         <Form.Select
           className="pokeselect"
           value={selectedPokemon}
